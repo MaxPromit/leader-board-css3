@@ -26,6 +26,45 @@ hr{
     margin-top: 30px;
     margin-bottom: 40px;
 }
+/* header section ------------------- */
+header{
+    height: 80px;
+    background-color: #562EFF;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.navigration{
+    width: 856px;
+    display: flex;
+    justify-content: space-between;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon img{
+    width:56px;
+    height: 56px;
+}
+.icon p {
+    margin-left: 11px;
+    color: white;
+}
+.home_page{
+    display: flex;
+    align-items: center;
+}
+.home_page li{
+    list-style: none;
+    padding: 0px 16px;
+    color:white;
+}
+.home_page img{
+    width: 56px;
+    height: 56px;
+}
 
 /* top player */
 .section_title{
