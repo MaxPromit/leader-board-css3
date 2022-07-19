@@ -26,6 +26,9 @@ hr{
     margin-top: 30px;
     margin-bottom: 40px;
 }
+.mobile{
+    display: none;
+}
 /* header section ------------------- */
 header{
     height: 80px;
@@ -35,10 +38,17 @@ header{
     flex-direction: column;
 
 }
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 .navigration{
-    width: 856px;
+    width: 100%;
+    max-width: 856px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .icon{
     display: flex;
@@ -161,9 +171,45 @@ header{
 }
 /* Media Queries-------------- */
 
-@media screen and (max-width:668px) {
-    .container{
+/* mobile phone under 500px ------------------*/
+
+/* @media screen and (max-width:530px) {
+
+    .players{
+        background-color: rebeccapurple;
+    }
+    
+} */
+
+/* mobile phone under 500px end -------------- */
+
+
+
+
+@media screen and (max-width: 668px) {
+    .nav_wrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
+    }
+    .mobile{
+        display: block;
+       padding: 0px 25px;
+        /* margin-top: 25px; */
+        font-size: 30px;
+        
+    }
+   .icon{
+    width: 100%;
+    justify-content: center;
+   height: 80px;
+   }
+   .home_page{
+    display: none;
+   }
+    .container{
+        width: 90%;
     }
     .players, .blog_wrapper, .course_wrapper{
        grid-template-columns: repeat(1, 1fr);
@@ -194,5 +240,9 @@ header{
     }
     .player{
         justify-content: center;
+    }
+    .course_wrapper{
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 20px;
     }
 }
